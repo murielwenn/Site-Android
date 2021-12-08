@@ -21,6 +21,52 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a.externo::after {
+    content: '\1f517';
+
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong {
+    color: #402138;
+    font-weight: bold;
+    
+}
+
+div.video {
+    background-color: #522a48;
+    
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+ 
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #e4b0be ;
+    color: #402138;
+
+}
+main a:hover {
+    text-decoration: underline;
+    color: #703a63;
+}
+
 header {
     background-image: linear-gradient(to top, #402138 , #b67694);
     min-height: 150px;
@@ -34,6 +80,7 @@ header > h1{
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.734);
 
 
@@ -46,20 +93,26 @@ header > p{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.734);
+    padding-bottom: 20px;
+    
 }
 
 nav{
     background-color: #402138;
-    padding: 5px;
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
    
 }
 
 nav > a{
-    color: white;
-    padding: 5px;
+    color: #ffcfdb;
+    padding: 10px;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
-a:hover{
+nav > a:hover{
     background-color: #e4b0be;
 }
 
@@ -78,11 +131,15 @@ article > h2{
     
     font-family: 'idroid', 'Arial';
     color: #402138;
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
-article > h3 {
+main h3 {
     font-family: 'idroid', 'Arial';
-    color: #402138;
+    color: #522a48;
+    text-indent: 8px;
+    font-weight: normal;
     background-image: linear-gradient(to right, #e4b0be, #fdeaf3);
 }
 main img {
@@ -90,13 +147,34 @@ main img {
     margin: auto;
 }
 main img.pequena{
-    width: 40%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
+
+aside {
+    background-color: #e4b0be;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.494);
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+}
+aside h4 {
+    background-color: #402138 ;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
 footer{
     text-align: center;
     background-color: #402138;
     color: white;
     padding: 5px;
+    font-size: .8em;
 }
