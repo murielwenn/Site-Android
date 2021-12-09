@@ -5,10 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-:root{
-    --fonte-destaque: Bebas Neue, cursive;    
+@font-face {
+    font-family: 'bebas';
+    src: url(fontes/BebasNeue-Regular.ttf) format('truetype');
 }
 
 * {
@@ -71,13 +70,13 @@ header {
     background-image: linear-gradient(to top, #402138 , #b67694);
     min-height: 150px;
     color: white;
-    font-family: var(--fonte-destaque);
+    font-family: 'bebas', 'cursive';
     text-align: center;
     padding-top: 40px;    
 }
 
 header > h1{
-    font-family: var(--fonte-destaque);
+    font-family: 'bebas', 'cursive';
     margin-bottom: 20px;
     font-size: 3em;
     font-weight: normal;
@@ -86,7 +85,7 @@ header > h1{
 
 }
 
-header > p{
+header > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     max-width: 500px;
@@ -94,7 +93,7 @@ header > p{
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.734);
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     
 }
 
